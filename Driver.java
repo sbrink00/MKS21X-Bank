@@ -36,5 +36,13 @@ public class Driver{
 
     System.out.println(output);
 
+    BankAccount b1 = new BankAccount(1000, 500.00, "pass1");
+    BankAccount b2 = new BankAccount(2000, 0.00, "pass2");
+    System.out.println(b1.transferTo(b2, 250.00, "urmom"));
+    System.out.println(b1.transferTo(b2, -1098097.00, "pass1"));
+    System.out.println(b1.transferTo(b2, 501.00, "pass1"));
+    System.out.println(b1.transferTo(b2, 250.00, "pass1"));
+    System.out.println(b1);
+    System.out.println(b2);
   }
 }

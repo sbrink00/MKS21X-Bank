@@ -57,4 +57,12 @@ public class BankAccount{
       }
     }
 
+    private boolean authenticate(String password){
+      return password.equals(this.password);
+    }
+
+    public boolean transferTo(BankAccount other, double amount, String password){
+      return authenticate(password) && this.withdraw(amount) && other.deposit(amount);
+    }
+
 }
