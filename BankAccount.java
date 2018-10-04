@@ -20,7 +20,9 @@ public class BankAccount{
    public int getAccountID(){
      return accountID;
    }
-
+   public String getPassword(){
+     return password;
+   }
   /*Change the value of password to the specified value
    *@param newPass The value to replace the old password with*/
     public void setPassword(String newPass){
